@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Faris Dwi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Faris Dwi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="#profilUsaha">Profil Usaha</a></li>
+      <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+      <li class="nav-item"><a class="nav-link" href="#tentangSaya">Tentang Saya</a></li>
+      <li class="nav-item"><a class="nav-link" href="#kontakKami">Kontak Kami</a></li>
+    </ul>
+  </div>  
+</nav>
+
+<!-- Profil Usaha -->
+<div class="container mt-5" id="profilUsaha">
+  <h2 class="text-center">Profil Usaha</h2>
+  <p> brand fashion yang menghadirkan pakaian pria dan wanita berkualitas tinggi dengan desain modern dan elegan.</p>
+  <p>Kami berfokus pada tren terkini serta menggunakan bahan ramah lingkungan untuk menciptakan produk yang nyaman dan stylish.</p>
+  <p>Melayani berbagai kebutuhan gaya, mulai dari kasual hingga formal, kami berkomitmen memberikan pengalaman berbelanja yang menyenangkan dengan layanan pelanggan yang responsif dan personal.</p>
+</div>
+
+<!-- Produk -->
+<div class="container mt-5" id="produk">
+  <h2 class="text-center">Produk Kami</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <img src="kemeja.jpeg" class="img-fluid" alt="Gambar Kemeja">
+      <p class="text-center">Kemeja</p>
+    </div>
+    <div class="col-md-6">
+      <img src="sepatu.jpeg" class="img-fluid" alt="Gambar Sepatu">
+      <p class="text-center">Sepatu</p>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Nama Produk</th>
+            <th>Deskripsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kemeja</td>
+            <td>Memiliki bahan yang tebal dan desain yang menarik.</td>
+          </tr>
+          <tr>
+            <td>Sepatu</td>
+            <td>Sepatu kami dirancang dengan mengikuti tren fashion terkini, sehingga cocok untuk berbagai gaya dan kesempatan.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<!-- Tentang Saya -->
+<div class="container mt-5" id="tentangSaya">
+  <h2 class="text-center">Tentang Saya</h2>
+  <div class="card" style="width:400px; margin: 0 auto;">
+    <img class="card-img-top rounded-circle mx-auto mt-4" src="WhatsApp Image 2024-09-16 at 14.13.08.jpeg" alt="Profile image" style="width:50%;">
+    <div class="card-body text-center">
+      <p class="card-text"><strong>Nama:</strong> Faris Dwi Asmaludin</p>
+      <p class="card-text"><strong>Asal Daerah:</strong> Gresik, Indonesia</p>
+      <p class="card-text"><strong>SMA Asal:</strong> SMA Kanjeng Sepuh Sidayu</p>
+      <p class="card-text"><strong>Motivasi Studi:</strong> Saya ingin mendalami sistem teknologi informasi untuk berkontribusi dalam pengembangan solusi teknologi yang inovatif.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Kontak Kami -->
+<div class="container mt-5" id="kontakKami">
+  <h2 class="text-center">Kontak Kami</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Nama:</label>
+      <input type="text" class="form-control" id="name" placeholder="Masukkan Nama">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Masukkan Email">
+    </div>
+    <div class="form-group">
+      <label for="message">Pesan:</label>
+      <textarea class="form-control" id="message" rows="5" placeholder="Masukkan Pesan"></textarea>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Kirim</button>
+  </form>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Terima Kasih!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Terima kasih telah menghubungi kami. Kami akan segera menghubungi Anda kembali.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
